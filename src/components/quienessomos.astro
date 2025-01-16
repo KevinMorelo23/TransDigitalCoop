@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+---
+
+<BaseLayout>
+
+</BaseLayout>
+<div class="flex flex-col items-start  w-full px-10 py-5 items-center">
+    <h2 class="text-3xl font-bold text-start md:text-5xl text-[#1e2b18]">¿Quienes somos?</h2> <br>
+    <div class="video-container">
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/lpiAgSoD-P8?controls=1&autoplay=0&mute=0&rel=0&modestbranding=1" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen 
+            loading="lazy"
+            class="rounded-md bg-white shadow-2xl p-4 hover:scale-110 transition-all duration-300 ease-in-out ">
+             
+        </iframe>
+    </div>
+    <br>
+    <button class="bg-[#1e2b18] text-[#fffdfd] font-bold py-2 px-4 rounded-lg shadow-md hover:bg-[#0c110a] transition-all duration-300 max-w-60 ">
+        Conoce más aquí
+    </button>
+    
+</div>
+
+
+  <style>
+    .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+/* Tamaño predeterminado (pantallas grandes como PC) */
+.video-container iframe {
+    width: 1080px;
+    height: 608px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.video-container iframe:hover {
+    transform: scale(1.1);
+}
+
+/* Ajustes para pantallas pequeñas (celulares) */
+@media (max-width: 768px) {
+    .video-container iframe {
+        width: 90%;
+        height: auto; /* Mantiene la proporción automáticamente */
+    }
+}
+
+  </style>

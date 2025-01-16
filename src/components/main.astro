@@ -1,0 +1,240 @@
+---
+import logo from '../../public/tdc.png';
+import eccomerce from '../../public/exomerce.png';
+---
+<header class="flex justify-between items-center p-4 bg-[#fffdfd] shadow-lg sticky top-0 z-50">
+    <!-- Logo -->
+    <div class="logo">
+      <img src={logo.src} alt="Transdigitalcoop" class="w-full size-12" />
+    </div>
+  
+    <!-- Toggle Menu (Hamburger Icon) -->
+    <div id="togglemenu" class="cursor-pointer md:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M4 6l16 0" />
+        <path d="M4 12l16 0" />
+        <path d="M4 18l16 0" />
+      </svg>
+    </div>
+  
+    <!-- Exit Menu (Close Icon) -->
+    <div id="exitmenu" class="hidden cursor-pointer md:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M18 6l-12 12" />
+        <path d="M6 6l12 12" />
+      </svg>
+    </div>
+  
+    <!-- Navigation Links -->
+    <div id="navlinks" class="hidden absolute top-16 text-center md:static md:flex  md:space-x-4 bg-[#fffdfd] md:bg-transparent text-sm md:text-md max-w-none " >
+      <ul class="flex flex-col gap-4 space-y-4 p-4 sm:w-full md:flex-row md:space-y-0 text-center md:text-start">
+          <li><a href="/" class="hover:text-[#1e2b18] transition duration-700 ease-in-out text-xs md:text-base">Nosotros</a></li>
+          <li><a href="/" class="hover:text-[#1e2b18]  transition duration-700 ease-in-out text-xs md:text-base">Planes y Precios</a></li>
+          <li><a href="/" class="hover:text-[#1e2b18]  transition duration-700 ease-in-out text-xs md:text-base">Contactanos</a></li>
+          <li><a href="/" class="hover:text-[#1e2b18]  transition duration-700 ease-in-out text-xs md:text-base">Rutas de aprendizaje</a></li>
+          <li><a href="/" class="hover:text-[#1e2b18]  transition duration-700 ease-in-out text-xs md:text-base">Guias</a></li>
+          <li><a href="/" class="hover:text-[#1e2b18] transition duration-700 ease-in-out text-xs md:text-base">Inicio</a></li>
+      </ul>
+    </div>
+</header>
+  
+
+<script>
+    // Seleccionar elementos
+    const toggleMenu = document.getElementById("togglemenu");
+    const exitMenu = document.getElementById("exitmenu");
+    const navLinks = document.getElementById("navlinks");
+  
+    // Mostrar el menú
+    toggleMenu.addEventListener("click", () => {
+      navLinks.classList.remove("hidden");
+      toggleMenu.classList.add("hidden");
+      exitMenu.classList.remove("hidden");
+    });
+  
+    // Ocultar el menú
+    exitMenu.addEventListener("click", () => {
+      navLinks.classList.add("hidden");
+      toggleMenu.classList.remove("hidden");
+      exitMenu.classList.add("hidden");
+    });
+  </script>
+  
+
+<section id="bg">
+    <div class="flex flex-col md:flex-row items-start justify-between w-full px-10 py-20 items-center ">
+        <div class="md:w-3/4 px-4">
+            <h1 class="text-2xl font-bold flex sm:text-3xl md:text-7xl  text-[#1e2b18] text-center md:text-start">Líder en Soluciones Digitales para Empresas y Emprendedores</h1>
+            <h3 class="text-sm sm:text-xl py-4 text-gray-600 text-center md:text-start">Conozca la transformación digital en la economía solidaria y el sector cooperativo, mejorando la colaboración y aprovechando la tecnología para el éxito sostenible</h3>    
+        </div>
+        <div class="md:w-2/4 px-4 mt-10 md:mt-0 flex flex-col gap-8 text-center  rounded-lg bg-white shadow p-4 ">
+            <h2 class="text-2xl font-bold text-[#1e2b18]">Quieres que te contactemos?</h2>
+        <form action="" class="flex flex-col gap-4">
+            <div class="flex flex-col-2 gap-4 w-full">  
+                <input  placeholder="Nombre" class=" text-black placeholder-gray-600 w-full px-4 py-2.5 mt-2 text-base   transition duration-500 ease-in-out transform border-transparent rounded-lg bg-gray-200  focus:border-blueGray-500 focus:bg-white  focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 ring-gray-400">
+                  
+                <input type="text" placeholder="Apellido" class=" text-black placeholder-gray-600 w-full px-4 py-2.5 mt-2 text-base   transition duration-500 ease-in-out transform border-transparent rounded-lg bg-gray-200  focus:border-blueGray-500 focus:bg-white  focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 ring-gray-400">
+                
+            </div>
+            <input type="mail" placeholder="Correo" class=" text-black placeholder-gray-600 w-full px-4 py-2.5 mt-2 text-base   transition duration-500 ease-in-out transform border-transparent rounded-lg bg-gray-200  focus:border-blueGray-500 focus:bg-white  focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 ring-gray-400">
+            <input type="phone" placeholder="Celular" class=" text-black placeholder-gray-600 w-full px-4 py-2.5 mt-2 text-base   transition duration-500 ease-in-out transform border-transparent rounded-lg bg-gray-200  focus:border-blueGray-500 focus:bg-white  focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 ring-gray-400">
+            <select class=" text-black placeholder-gray-600 w-full px-4 py-2.5 mt-2 text-base   transition duration-500 ease-in-out transform border-transparent rounded-lg bg-gray-200  focus:border-blueGray-500 focus:bg-white  focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 ring-gray-400">
+                <option disabled selected>Seleccione su ocupación</option>
+                <option>Estudiante</option>
+                <option>Profesional</option>
+                <option>Emprendedor</option>
+                <option>Otro</option>
+            </select>
+            <span>Deja tus datos y uno de nuestros asesores se contactará con usted</span>
+            <button class="bg-[#1e2b18] text-[#fffdfd] font-bold py-2 px-4 rounded-lg shadow-md hover:bg-[#0c110a] transition-all duration-300" >Enviar</button>
+        </form>
+    
+        </div>
+    </div>
+    
+    <div class="flex flex-col md:flex-row items-start justify-between w-full px-10 py-20 items-center z-0">
+        <div class="md:w-3/4 px-4 flex flex-col gap-4 text-start">
+            <h2 class="text-3xl font-bold text-start md:text-5xl">
+                ¡Aprende con <br>    TransDigitalCoop!
+            </h2>
+            <h3 class="text-md  text-start md:text-lg text-gray-600">
+                Descarga ya nuestras guías y aprende con nosotros.
+            </h3>
+            <button class="bg-[#1e2b18] text-[#fffdfd] font-bold py-2 px-4 rounded-lg shadow-md hover:bg-[#0c110a] transition-all duration-300 max-w-40 ">
+                Ver Ahora
+            </button>
+           </div>
+        <div class="md:w-3/4 px-4 mt-10 md:mt-0 flex flex-col gap-8 text-center  rounded-lg bg-white shadow-2xl p-4 hover:scale-110 transition-all duration-300 ease-in-out">
+           <img src={eccomerce.src} alt="Eccomerce" class="w-full h-auto " />
+        </div>
+    </div>
+    <div class="flex flex-col items-start  w-full px-10 py-5 items-center">
+        <h2 class="text-3xl font-bold text-start md:text-5xl text-[#1e2b18]">¿Quienes somos?</h2> <br>
+        <div class="video-container">
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/lpiAgSoD-P8?controls=1&autoplay=0&mute=0&rel=0&modestbranding=1" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen 
+                loading="lazy"
+                class="rounded-md bg-white shadow-2xl p-4 hover:scale-110 transition-all duration-300 ease-in-out ">
+                 
+            </iframe>
+        </div>
+        <br>
+        <button class="bg-[#1e2b18] text-[#fffdfd] font-bold py-2 px-4 rounded-lg shadow-md hover:bg-[#0c110a] transition-all duration-300 max-w-60 ">
+            Conoce más aquí
+        </button>
+        
+    </div>
+
+    <div class="flex flex-col items-start  w-full px-10 py-5 items-center">
+        <h2 class="text-3xl font-bold text-start md:text-5xl">Nuestros Servicios</h2>
+    </div>
+    
+<div class="flex flex-wrap md:flex-col-3 gap-5 justify-around py-5">
+ 
+
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow bg-[#fffdfd]>
+    <a href="#">
+        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Read more
+             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a>
+    </div>
+</div>
+
+
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Read more
+             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a>
+    </div>
+</div>
+
+
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Read more
+             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a>
+    </div>
+</div>
+
+</div>
+    
+</section>
+
+  <style>
+#bg {   
+    background: linear-gradient(to bottom left, #ffe4e6, #ccfbf1);
+}
+
+    .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+/* Tamaño predeterminado (pantallas grandes como PC) */
+.video-container iframe {
+    width: 1080px;
+    height: 608px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.video-container iframe:hover {
+    transform: scale(1.1);
+}
+
+/* Ajustes para pantallas pequeñas (celulares) */
+@media (max-width: 768px) {
+    .video-container iframe {
+        width: 90%;
+        height: auto; /* Mantiene la proporción automáticamente */
+    }
+}
+
+  </style>
+
+
+
