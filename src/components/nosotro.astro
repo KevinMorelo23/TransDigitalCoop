@@ -1,0 +1,61 @@
+---
+import Quienessomos from '../../public/quienessomos.jpg';
+import Mision from '../../public/mision.jpg';
+import Enfoque from '../../public/enfoque.jpg';
+import Footer from './footer.astro';
+---
+
+
+<sectcion id="bg">
+    <div class="flex flex-col md:flex-row items-start justify-between w-full px-10 py-20 items-center">
+        <div class="md:w-3/4 px-4 flex flex-col gap-4 text-start  text-sm md:text-md">
+            <h2 class="text-3xl font-bold text-start md:text-5xl">
+                ¿Quienes somos?
+            </h2>
+            <p class="text-md  text-start md:text-sm text-gray-600">
+                La Cooperativa TransDigitalCoop, desarrollada por estudiantes, profesores y egresados de la Universidad Cooperativa de Colombia en Montería, surge como respuesta a la necesidad de transformación digital en el sector de la economía solidaria y cooperativa. A través de la integración de tecnologías digitales y la promoción de la asociatividad empresarial, busca mejorar la competitividad, productividad y rentabilidad de las organizaciones solidarias.
+            </p>
+        </div>
+        <div class="md:w-2/4 px-4 mt-10 md:mt-0 flex flex-col gap-8 text-center  rounded-lg bg-white shadow-2xl p-4 hover:scale-110 transition-all duration-300 ease-in-out">
+            <img src={Quienessomos.src} alt="" class="w-full h-auto " />
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row items-start justify-between w-full px-10 py-20 items-center flex-col-reverse md:flex-row">
+        
+        <div class="md:w-2/4 px-4 mt-10 md:mt-0 flex flex-col gap-8 text-center  rounded-lg bg-white shadow-2xl p-4 hover:scale-110 transition-all duration-300 ease-in-out">
+            <img src={Mision.src} alt="" class="w-full h-auto " />
+        </div>
+
+        <div class="md:w-3/4 px-4 flex flex-col gap-4 text-start">
+            <h2 class="text-3xl font-bold text-start md:text-5xl">
+                Nuestra misión
+            </h2>
+            <p class="text-md  text-start md:text-sm text-gray-600">
+                Es contribuir a los Objetivos de Desarrollo Sostenible, especialmente en crecimiento socioeconómico y trabajo decente. TransDigitalCoop ofrece servicios de implementación de transformación digital en MiPymes y desarrollo de plataformas tecnológicas cooperativas, como RedSSApp, para impulsar el desarrollo económico y cultural de los territorios asociativos y solidarios. Con un enfoque en la innovación y la eficiencia, busca convertirse en líderes reconocidos en el campo, ofreciendo soluciones de alta calidad en transformación digital. Además, a través de la creación de la Red de Integración Económica Digital de Organizaciones Solidarias en Córdoba, se promueve la asociatividad digital y se fortalece el sector de la economía solidaria en la región. </p>
+        </div>
+    </div>
+
+
+    <div class="flex flex-col md:flex-row items-start justify-between w-full px-10 py-20 items-center">
+        <div class="md:w-3/4 px-4 flex flex-col gap-4 text-start">
+            <h2 class="text-3xl font-bold text-start md:text-5xl">
+                Enfoque
+            </h2>
+            <p class="text-md  text-start md:text-sm text-gray-600">
+                TransDigitalCoop es reconocido por su equipo joven con habilidades emprendedoras y valores cooperativos, centrado en alcanzar los Objetivos de Desarrollo Sostenible, especialmente el crecimiento socioeconómico y trabajo decente. Su enfoque se basa en integrar la transformación digital en todas las esferas organizativas y conectar redes de asociatividad entre emprendimientos cooperativos y comunidades de práctica. Con alianzas estratégicas, su visión es impulsar la transformación digital en las Organizaciones de Economía Social y Solidaria, mientras su visión es convertirse en líderes reconocidos en el campo, ofreciendo soluciones innovadoras y eficientes que generen valor para sus clientes. <br>
+<br>
+                En cuanto a su portafolio de servicios se ha enfocado en implementar la transformación digital en las MiPymes a través de herramientas tecnológicas de las TIC, utilizando plataformas cooperativas, facilitando el acceso a mercados, redes de comercio electrónico, atención en línea, logística de última milla, entre otros. Además, se ha logrado la creación de la Red de Integración Económica Digital de las Organizaciones Solidarias en Córdoba. La formulación de proyectos y la cooperación internacional también han sido elementos fundamentales en el enfoque estratégico del uso de las TIC, así como impulsar el desarrollo económico y cultural de territorios asociativos y solidarios por medio de la implementación de plataformas tecnológicas cooperativas. </p>
+        </div>
+        <div class="md:w-2/4 px-4 mt-10 md:mt-0 flex flex-col gap-8 text-center  rounded-lg bg-white shadow-2xl p-4 hover:scale-110 transition-all duration-300 ease-in-out">
+            <img src={Enfoque.src} alt="" class="w-full h-auto " />
+        </div>
+    </div>
+    
+</sectcion>
+
+<style>
+    #bg {   
+    background: linear-gradient(to bottom left, #ffe4e6, #ccfbf1);
+}
+</style>

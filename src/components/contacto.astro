@@ -1,0 +1,68 @@
+---
+
+import Footer from '../components/footer.astro';
+
+---
+
+
+
+<section id="bg">
+    
+    <div class="flex items-center justify-center py-20">
+        <!-- Contenedor principal -->
+        <div class="flex flex-col md:flex-row gap-8 md:gap-16 w-full max-w-5xl px-4">
+          <!-- Formulario de contacto -->
+          <div class="md:w-1/2 px-4 flex flex-col gap-8 text-center justify-center rounded-lg bg-white shadow-2xl p-4">
+            <h2 class="text-lg md:text-2xl font-bold text-[#1e2b18]">Contáctanos</h2>
+            <form action="" class="flex flex-col gap-4">
+              <input
+                type="text"
+                placeholder="Nombre"
+                class="text-black placeholder-gray-600 w-full px-4 py-2.5 mt-2 text-base transition duration-500 ease-in-out transform border-transparent rounded-lg bg-gray-200 focus:border-blueGray-500 focus:bg-white focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 ring-gray-400"
+              />
+              <input
+                type="email"
+                placeholder="Correo"
+                class="text-black placeholder-gray-600 w-full px-4 py-2.5 mt-2 text-base transition duration-500 ease-in-out transform border-transparent rounded-lg bg-gray-200 focus:border-blueGray-500 focus:bg-white focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 ring-gray-400"
+              />
+              <textarea
+                name="mensaje"
+                id="mensaje"
+                placeholder="Mensaje"
+                class="text-black placeholder-gray-600 w-full px-4 py-2.5 mt-2 text-base transition duration-500 ease-in-out transform border-transparent rounded-lg bg-gray-200 focus:border-blueGray-500 focus:bg-white focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 ring-gray-400"
+              ></textarea>
+              <span>Te responderemos en breve</span>
+              <button
+                class="bg-[#1e2b18] text-[#fffdfd] font-bold py-2 px-4 rounded-lg shadow-md hover:bg-[#0c110a] transition-all duration-300"
+              >
+                Enviar
+              </button>
+            </form>
+          </div>
+      
+          <!-- Redes Sociales -->
+          <div class="md:w-1/2 px-4 flex flex-col items-center gap-6 text-center justify-center rounded-lg bg-white shadow-2xl p-4">
+            <h2 class="text-lg md:text-2xl font-bold text-[#1e2b18]">Síguenos en redes sociales</h2>
+            <p class="text-sm text-gray-600">Estamos en las siguientes plataformas:</p>
+            <div class="flex gap-4">
+              <a href="https://www.youtube.com/channel/UC8pUqx0B6hlhcfHdoDNb2LA" target="_blank" class="text-red-500 hover:text-red-600 flex flex-row gap-2 "> YouTube
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" /><path d="M10 9l5 3l-5 3z" /></svg>
+              </a>
+              <a href="https://www.instagram.com/transdigitalcoop/" target="_blank" class="text-blue-500 hover:text-blue-600 flex flex-row gap-2" > instagram
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg>  
+              </a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+<br>
+<br>
+    <Footer />   
+</section>
+
+<style>
+    #bg {   
+    background: linear-gradient(to bottom left, #ffe4e6, #ccfbf1);
+}
+</style>

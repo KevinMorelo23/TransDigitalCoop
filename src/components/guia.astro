@@ -1,0 +1,75 @@
+--- 
+import Tic from '../../public/Group.png'; 
+import Maps from '../../public/maps.png';
+import Storytelling from '../../public/story.png';
+import Redssapp from '../../public/RedssApp.png';
+import Cadena from '../../public/cadena.png';
+import Transformacion from '../../public/transformacion.png';
+import Comercio from '../../public/comercio.png';
+import Footer from './footer.astro';
+
+const cards = [
+    {
+        title: "Maps",
+        description: "Guía Completa para Empresas: Maximiza tu Presencia en Google Maps",
+        img: Maps.src,
+    },
+    {
+        title: "Storytelling",
+        description: "Guión para grabar tu Storytelling Vol. 2",
+        img: Storytelling.src,
+    },
+    {
+        title: "RedssApp",
+        description: "¿Quieres formar parte de nuestra red de asociatividad empresarial? Aprende cómo.",
+        img: Redssapp.src,
+    },
+    {
+        title: "Cadena de suministro 4.0",
+        description: "¿Qué es la cadena de suministro 4.0? Aprende ahora",
+        img: Cadena.src,
+    },
+    {
+        title: "Transformación Digital",
+        description: "¿Qué es la transformación digital? Impulsa tu empresa digitalmente",
+        img: Transformacion.src,
+    },
+    {
+        title: "Comercio Electrónico",
+        description: "¿Qué es el comercio electrónico? Mejora tu presencia digital.",
+        img: Comercio.src,
+    },
+];
+---
+<section id="bg">
+    <div class="py-20 flex flex-col items-center">
+        <div class="text-center">
+            <h2 class="text-xl md:text-5xl font-bold">¡Aprende con TransDigitalCoop!</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 py-6 justify-center">
+            {cards.map((card) => (
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-2xl">
+                    <div class="flex justify-center items-center p-4">
+                        <img 
+                            src={card.img} 
+                            alt={`Imagen de ${card.title}`} 
+                            class="w-64 h-64 object-scale-down transition-transform duration-300 hover:scale-105"
+                        />
+                    </div>
+                    <div class="p-5">
+                        <h5 class="text-2xl font-bold text-gray-900 mb-2">{card.title}</h5>
+                        <p class="text-gray-600 text-sm mb-3">{card.description}</p>
+                        <button class="bg-[#1e2b18] text-white font-bold py-2 px-4 rounded-lg shadow-md hover:bg-[#0c110a] transition-all duration-300 flex items-center gap-2">
+                            Descargar
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            ))}
+        </div>
+    </div>
+    <Footer />
+</section>
+
