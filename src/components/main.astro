@@ -1,11 +1,14 @@
 ---
 import logo from '../../public/tdc.png';
 import eccomerce from '../../public/exomerce.png';
+import virtualvent from '../../public/VirtualVentSVG.svg';
+import Reds from '../../public/RedssAppSER.png';
+import Tic from '../../public/Group.png';
 ---
 <header class="flex justify-between items-center p-4 bg-[#fffdfd] shadow-lg sticky top-0 z-50">
     <!-- Logo -->
     <div class="logo">
-      <img src={logo.src} alt="Transdigitalcoop" class="w-full size-12" />
+      <img src={logo.src} alt="Transdigitalcoop" class="w-full size-12 sm:size-6" />
     </div>
   
     <!-- Toggle Menu (Hamburger Icon) -->
@@ -66,8 +69,8 @@ import eccomerce from '../../public/exomerce.png';
 <section id="bg">
     <div class="flex flex-col md:flex-row items-start justify-between w-full px-10 py-20 items-center ">
         <div class="md:w-3/4 px-4">
-            <h1 class="text-2xl font-bold flex sm:text-3xl md:text-7xl  text-[#1e2b18] text-center md:text-start">Líder en Soluciones Digitales para Empresas y Emprendedores</h1>
-            <h3 class="text-sm sm:text-xl py-4 text-gray-600 text-center md:text-start">Conozca la transformación digital en la economía solidaria y el sector cooperativo, mejorando la colaboración y aprovechando la tecnología para el éxito sostenible</h3>    
+            <h1 class="text-3xl font-bold flex sm:text-4xl text-start md:text-7xl  text-[#1e2b18] text-center md:text-start">Líder en Soluciones Digitales para Empresas y Emprendedores</h1>
+            <h3 class="text-md sm:text-xl py-4 text-gray-600 text-start">Conozca la transformación digital en la economía solidaria y el sector cooperativo, mejorando la colaboración y aprovechando la tecnología para el éxito sostenible</h3>    
         </div>
         <div class="md:w-2/4 px-4 mt-10 md:mt-0 flex flex-col gap-8 text-center  rounded-lg bg-white shadow p-4 ">
             <h2 class="text-2xl font-bold text-[#1e2b18]">Quieres que te contactemos?</h2>
@@ -110,19 +113,18 @@ import eccomerce from '../../public/exomerce.png';
            <img src={eccomerce.src} alt="Eccomerce" class="w-full h-auto " />
         </div>
     </div>
-    <div class="flex flex-col items-start  w-full px-10 py-5 items-center">
+    <div class="flex flex-col items-start  w-full  py-5 items-center">
         <h2 class="text-3xl font-bold text-start md:text-5xl text-[#1e2b18]">¿Quienes somos?</h2> <br>
         <div class="video-container">
             <iframe 
-                width="560" 
-                height="315" 
+                
                 src="https://www.youtube.com/embed/lpiAgSoD-P8?controls=1&autoplay=0&mute=0&rel=0&modestbranding=1" 
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen 
                 loading="lazy"
-                class="rounded-md bg-white shadow-2xl p-4 hover:scale-110 transition-all duration-300 ease-in-out ">
+                class=" md:w-3/4 px-4 mt-10 md:mt-0 rounded-md bg-white shadow-2xl  hover:scale-110 transition-all duration-300 ease-in-out ">
                  
             </iframe>
         </div>
@@ -137,66 +139,87 @@ import eccomerce from '../../public/exomerce.png';
         <h2 class="text-3xl font-bold text-start md:text-5xl">Nuestros Servicios</h2>
     </div>
     
-<div class="flex flex-wrap md:flex-col-3 gap-5 justify-around py-5">
- 
-
-<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow bg-[#fffdfd]>
-    <a href="#">
-        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-    </a>
-    <div class="p-5">
+<div class="flex flex-wrap md:flex-col-3 sm:pb-6 items-center justify-evenly py-5 ">
+    <div class="max-w-sm max-h-xl bg-white border border-gray-200 rounded-lg shadow-xl bg-[#fffdfd]>
         <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+        <div class="flex justify-center items-center">
+            <img 
+            src={virtualvent.src} 
+            alt="logo Virtual Vent"
+            class="w-64 h-64 object-scale-down  transition-transform duration-300 hover:scale-105 p-4"
+        />
+        </div>
+            
         </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Read more
-             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
+        <div class="p-5">
+            <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Virtual Vent</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-600" >Plataforma de comercio electrónico enfocada a potenciar las ventas de las cooperativas.</p>
+            <button class="bg-[#1e2b18] text-[#fffdfd] font-bold py-2 px-4 rounded-lg shadow-md hover:bg-[#0c110a] transition-all duration-300 max-w-60 flex flex-row gap-2 items-center">
+                Ver más
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </button>
+            
+        </div>
+    </div>
+
+    <div class="max-w-sm max-h-xl bg-white border border-gray-200 rounded-lg shadow-xl bg-[#fffdfd]>
+        <a href="#">
+        <div class="flex justify-center items-center">
+            <img 
+            src={Tic.src} 
+            alt="logo Virtual Vent"
+            class="w-64 h-64 object-scale-down  transition-transform duration-300 hover:scale-105 p-4"
+        />
+        </div>
+            
         </a>
+        <div class="p-5">
+            <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Modelo TIC
+                </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-600" >Modelo de incorporación de las TIC para ayudar a las MiPymes a transformarse digitalmente.</p>
+            <button class="bg-[#1e2b18] text-[#fffdfd] font-bold py-2 px-4 rounded-lg shadow-md hover:bg-[#0c110a] transition-all duration-300 max-w-60 flex flex-row gap-2 items-center">
+                Ver más
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </button>
+            
+        </div>
+    </div>
+
+    <div class="max-w-sm max-h-xl bg-white border border-gray-200 rounded-lg shadow-xl bg-[#fffdfd]>
+        <a href="#">
+        <div class="flex justify-center items-center">
+            <img 
+            src={Reds.src} 
+            alt="logo Virtual Vent"
+            class="w-64 h-64 object-scale-down  transition-transform duration-300 hover:scale-105 p-4"
+        />
+        </div>
+            
+        </a>
+        <div class="p-5">
+            <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">RedssApp</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-600" >Red de Integración Económica Digital de las Organizaciones Solidarias en Córdoba.</p>
+            <button class="bg-[#1e2b18] text-[#fffdfd] font-bold py-2 px-4 rounded-lg shadow-md hover:bg-[#0c110a] transition-all duration-300 max-w-60 flex flex-row gap-2 items-center">
+                Ver más
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </button> 
+        </div>
     </div>
 </div>
 
 
-<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="#">
-        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-    </a>
-    <div class="p-5">
-        <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-        </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Read more
-             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
-        </a>
-    </div>
-</div>
-
-
-<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="#">
-        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-    </a>
-    <div class="p-5">
-        <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-        </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Read more
-             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
-        </a>
-    </div>
-</div>
-
-</div>
     
 </section>
 
@@ -226,11 +249,13 @@ import eccomerce from '../../public/exomerce.png';
     transform: scale(1.1);
 }
 
-/* Ajustes para pantallas pequeñas (celulares) */
 @media (max-width: 768px) {
     .video-container iframe {
         width: 90%;
-        height: auto; /* Mantiene la proporción automáticamente */
+        max-width: 600px;
+        height: 200px;
+        margin: 0 auto;
+        display: block;
     }
 }
 
