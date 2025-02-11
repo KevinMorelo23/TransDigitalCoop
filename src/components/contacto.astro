@@ -4,10 +4,7 @@ import Footer from '../components/footer.astro';
 
 ---
 
-
-
-<section id="bg">
-    
+<section id="bg" class="h-screen">
     <div class="flex items-center justify-center py-20">
         <!-- Contenedor principal -->
         <div class="flex flex-col md:flex-row gap-8 md:gap-16 w-full max-w-5xl px-4">
@@ -56,11 +53,10 @@ import Footer from '../components/footer.astro';
           </div>
         </div>
       </div>
-<br>
-<br>
-    <Footer />   
-</section>
 
+    
+</section>
+<Footer />
 <style>
     #bg {   
     background: linear-gradient(to bottom left, #ffe4e6, #ccfbf1);
